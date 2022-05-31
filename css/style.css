@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: blue; */
+    /* background:#00b894; */
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    
+
+}
+header{
+    width: 100%;
+    height: 1000px;
+    /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(14, 1, 1, 0.4)),url(../img/pexels-volker-meyer-5771312.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    /* background:#00b894; */
+    background:rgb(6, 189, 245);
+    /* background:url(../img/unnamed.png); */
+    opacity: 0.9;
+    /* background:#0446fa; */
+    display: flex;
+    /* background: rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),url(../img/); */
+    /* color: white; */
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+/* nav.logo{
+    width: 100%;
+    text-align: center;
+    padding-left: 30px;
+} */
+span img{
+    width: 500px;
+    height: 200px;
+    padding-left: 30px;
+    /* padding-top: 5px; */
+    display: inline-block;
+    margin: auto;
+}     
+ span h1{
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    text-align: center;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    /* top: -20px; */
+    font-family: 'Times New Roman', Times, serif;
+}
+span h2{
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    text-align: center;
+    padding-left: 200px;
+    font-size: 30px;
+    font-weight: 500;
+    /* top: -20px; */
+    font-family: 'Times New Roman', Times, serif;
+}
+nav.menu{
+    width: 40%;
+    /* background: yellow; */
+    /* color: #fff; */
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    width: 25%;
+    /* padding: 0 20px; */
+    /* padding-left: 20px; */
+    padding: 30px 40px;
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+    /* background-color: blue; */
+    font-weight: bold;
+}
+.menu a:first-child{
+    color: rebeccapurple;
+
+}
+.menu a:active{
+    color: red;
+}
+.menu a:first-child(3):visited{
+    color:yellow;
+}
+main{
+    width: 100%;
+    /* height: vh; */
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+
+    /* background-image: ; */
+}
+section {
+    background: none;
+    padding-top: 100px;
+    /* position: relative;
+    z-index: -1; */
+}
+section a{
+    padding: 10px 30px;
+    /* padding-top: 0px; */
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: all 0.5s ease;
+    /* justify-content:center ; */
+    /* align-items: center; */
+
+}
+section h3{
+   font-size: 35px;
+   font-weight: 200px;
+   letter-spacing: 3px;
+   text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    /* letter-spacing: 3px; */
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    /* margin: 30px 0 20px 0; */
+    font-size: 25px;
+    font-weight: 700px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    /* letter-spacing: 3px; */
+    text-shadow: 2px 1px 5px black;
+    /* text-transform: uppercase; */
+}
+section .btnone{
+    background: #fff;
+    color: #000;
+    /* height: 50px; */
+
+}
+.btnone:hover{
+    background: #00b894;
+    color: #fff;
+}
+
+section .btntwo{
+    background: #00b894;
+    color:white;
+}
+.btntwo:hover{
+    background: #fff;
+    color: #000;
+}
+.change_contect::after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+
+}
+@keyframes changetext{
+    0%{content: "Kathmandu";}
+    10%{content: "Pasupatinath";}
+    20%{content: "Shymbhu";}
+    30%{content: "Dakshankali";}
+    40%{content: "Hanuman dokha";}
+    50%{content: "Sundhara";}
+    80%{content: "Changunarayan";}
+    100%{content: "Pilot Baba";}
+}
+
+#slider{
+    overflow: hidden;
+    position: relative;
+    z-index:-1;
+    top: -600px;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    /* padding: 50px 50px; */
+    animation: 10s slider infinite;
+
+}
+#slider figure img{
+    width: 20%;
+    height: 890px;;
+    float: left;
+
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left: -200%;
+    }
+    80%{
+        left: -300%;
+    }
+    100%{
+        left: -200%;
+    }
+}
+/* #slider{
+    height: 600px;
+    width: auto;
+    padding: 40px 40px;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    35%{
+        left: -100;
+    }
+    45%{
+        left: -100;
+    }
+    75%{
+        left: -200;
+    }
+    90%{
+        left: -300;
+    }
+   100%{
+        left: -300;
+    }
+} */
+
+/* Services Section */
+#services{
+    margin: 10px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 4px;
+    margin: 2px 5px;
+    border-radius: 28px;
+    background: #afaeae;
+    /* margin-bottom: 20px; */
+    text-align: center;
+}
+
+#services .box img{ 
+   height: 300px;
+   width: 400px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    margin:auto;
+    display: block;
+    font-family: 'Bree Serif', serif;
+} 
+#gallary{
+    color: rgb(201, 25, 25);
+   font-size: 100px;
+    text-align: center;
+    text-decoration: underline;
+}
+#contact{
+    margin-top: -80px;
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('../img/contact-us.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+footer{
+    background: rgb(6, 189, 245);
+    /* background: rgb(82, 82, 79); */
+    color: white;
+    padding: 9px 20px;
+    font-size: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
